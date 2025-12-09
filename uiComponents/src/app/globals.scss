@@ -142,10 +142,22 @@ main {
   min-height: 100%;
   padding: 20px;
 
+  h3 > sub {
+    display: inline-block;
+    position: relative;
+    margin-top: -4px;
+    padding-left:22px;
+    vertical-align: middle;
+  }
   h3 > sub:before {
-    content: '|';
-    margin: 0 5px 0 10px;
-    color: #999;
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    width: 1px;
+    height: 20px;
+    background-color: #999;
+    vertical-align: top;
+    content: '';
   }
 }
 
