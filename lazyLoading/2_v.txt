@@ -1,5 +1,5 @@
 1:HL["/react-study/_next/static/css/2eafe5181916e713.css","style",{"crossOrigin":""}]
-0:["jiuRck3VvtlIH8gi-y-pH",[[["",{"children":[["item","lazyLoading/2_v","c"],{"children":["__PAGE__?{\"item\":[\"lazyLoading\",\"2_v\"]}",{}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/react-study/_next/static/css/2eafe5181916e713.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+0:["11floebU1Qcf78zC0O1X8",[[["",{"children":[["item","lazyLoading/2_v","c"],{"children":["__PAGE__?{\"item\":[\"lazyLoading\",\"2_v\"]}",{}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/react-study/_next/static/css/2eafe5181916e713.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:HL["/react-study/_next/static/css/f802cd9b4780b7ca.css","style",{"crossOrigin":""}]
 5:I[9553,["253","static/chunks/253-c6c72840f14e4ce9.js","194","static/chunks/194-08c0acc9374a3934.js","185","static/chunks/app/layout-1bfbc2226d2c44db.js"],""]
 6:I[6954,[],""]
