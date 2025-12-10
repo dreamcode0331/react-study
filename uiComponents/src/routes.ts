@@ -1,13 +1,25 @@
 import Accordions from "./components/01_accordion"
+import TabMenus from './components/02_tabMenu'
+import Tooltips from './components/03_tooltip'
+import TextBoxes from './components/04_textBox'
+import LineClamps from './components/05_lineClamp'
+import LazyLoad1 from './components/06_lazyLoading/1_r'
+import LazyLoad2V from './components/06_lazyLoading/2_v'
+import LazyLoad3 from './components/06_lazyLoading/3_r'
+import ScrollBox from './components/08_scrollBox'
 
 export const routePaths = [
   '/',
   '/accordion',
   '/tabMenu',
   '/tooltip',
-  '/modal',
-  '/carousel',
-  '/selectBox',
+  '/textBox',
+  '/lineClamp',
+  '/lazyLoading',
+  '/lazyLoading/1_r',
+  '/lazyLoading/2_v',
+  '/lazyLoading/3_r',
+  '/scrollBox',
 ] as const
 export type ROUTE_PATH = (typeof routePaths)[number]
 
@@ -33,9 +45,10 @@ export const routes: Record<ROUTE_PATH, ROUTE> = {
       '/accordion',
       '/tabMenu',
       '/tooltip',
-      '/modal',
-      '/carousel',
-      '/selectBox',
+      '/textBox',
+      '/lineClamp',
+      '/lazyLoading',
+      '/scrollBox',
     ],
   },
   '/accordion': {
@@ -48,31 +61,55 @@ export const routes: Record<ROUTE_PATH, ROUTE> = {
     key: '/tabMenu',
     link: '/tabMenu',
     name: '02. 탭메뉴',
-    children: null,
+    children: TabMenus,
   },
   '/tooltip': {
     key: '/tooltip',
     link: '/tooltip',
     name: '03. 툴팁',
-    children: null,
+    children: Tooltips,
   },
-  '/modal': {
-    key: '/modal',
-    link: '/modal',
-    name: '04. 모달',
-    children: null,
+  '/textBox': {
+    key: '/textBox',
+    link: '/textBox',
+    name: '04. 반응형 텍스트박스',
+    children: TextBoxes,
   },
-  '/carousel': {
-    key: '/carousel',
-    link: '/carousel',
-    name: '05. 캐러셀',
-    children: null,
+  '/lineClamp': {
+    key: '/lineClamp',
+    link: '/lineClamp',
+    name: '05. 여러줄 말줄임',
+    children: LineClamps,
   },
-  '/selectBox': {
-    key: '/selectBox',
-    link: '/selectBox',
-    name: '06. 셀렉트 박스',
-    children: null,
+  '/lazyLoading': {
+    key: '/lazyLoading',
+    link: '/lazyLoading/1_r',
+    name: '06. 지연 로딩',
+    children: ['/lazyLoading/1_r', '/lazyLoading/2_v', '/lazyLoading/3_r'],
+  },
+  '/lazyLoading/1_r': {
+    key: '/lazyLoading/1_r',
+    link: '/lazyLoading/1_r',
+    name: 'React1',
+    children: LazyLoad1,
+  },
+  '/lazyLoading/2_v': {
+    key: '/lazyLoading/2_v',
+    link: '/lazyLoading/2_v',
+    name: 'Vanilla',
+    children: LazyLoad2V,
+  },
+  '/lazyLoading/3_r': {
+    key: '/lazyLoading/3_r',
+    link: '/lazyLoading/3_r',
+    name: 'React3',
+    children: LazyLoad3,
+  },
+  '/scrollBox': {
+    key: '/scrollBox',
+    link: '/scrollBox',
+    name: '08. 횡 스크롤 박스',
+    children: ScrollBox,
   },
 }
 

@@ -31,7 +31,7 @@ const AccordionItem = ({
       <div className={cx('tab')} onClick={toggle}>
         {title}
       </div>
-      <div className={cx('description')} ref={descRef} HIDDEN={current ? undefined : 'until-found'}>
+      <div className={cx('description')} ref={descRef} hidden={current ? undefined : 'until-found' as any}>
         {description}
       </div>
     </li>
